@@ -1,0 +1,43 @@
+2 CPUs:
+  0: AMD EPYC 9534 64-Core Processor (64 cores, 128 threads)
+  1: AMD EPYC 9534 64-Core Processor (64 cores, 128 threads)
+
+3 visible NVIDIA CUDA GPUs:
+  0: NVIDIA L40S
+  1: NVIDIA L40S
+  2: NVIDIA L40S
+
+No visible AMD ROCm GPUs
+
+Benchmarking only I/O
+Warming up
+
+Running 3 times over 1000 events with 16 jobs, each with 16 threads, 16 streams, and 1 GPUs
+  2991.9 ±   9.0 ev/s (900 events, 59.3% overlap),   2982.5 ±  19.6 ev/s (⩾ 475 events, overlap-only)
+  3040.5 ±   9.1 ev/s (900 events, 44.2% overlap),   3011.3 ±  33.3 ev/s (⩾ 300 events, overlap-only)
+  3026.0 ±   9.1 ev/s (900 events, 83.0% overlap),   3034.2 ±  12.6 ev/s (⩾ 675 events, overlap-only)
+ --------------------
+  3026.0 ev/s (single measurement with the highest overlap),   3009.3 ±  25.9 ev/s (⩾ 300 events, overlap-only)
+
+
+Benchmarking NGTScouting_config.py
+Warming up
+
+Running 3 times over 1000 events with 16 jobs, each with 16 threads, 16 streams, and 1 GPUs
+    42.6 ±   0.0 ev/s (900 events, 97.4% overlap),     42.4 ±   0.0 ev/s (⩾ 800 events, overlap-only)
+    42.6 ±   0.0 ev/s (900 events, 98.2% overlap),     42.5 ±   0.0 ev/s (⩾ 800 events, overlap-only)
+    42.6 ±   0.0 ev/s (900 events, 96.8% overlap),     42.4 ±   0.0 ev/s (⩾ 775 events, overlap-only)
+ --------------------
+    42.6 ±   0.0 ev/s,     42.4 ±   0.0 ev/s (⩾ 775 events, overlap-only)
+
+
+-------------------------------------
+           GPU MEMORY USAGE
+-------------------------------------
+Monitoring Interval: 1 second(s)
+Number of Measurements: 1846
+Data points saved to: 'logs.NGTScouting.16j.16t.16s.gpu012/gpu_memory_NGTScouting_16j_16t_16s.csv'
+
+Peak Total GPU Memory Usage: 36852 MiB
+Mean Total GPU Memory Usage: 24735.71 MiB (float using bc)
+-------------------------------------
