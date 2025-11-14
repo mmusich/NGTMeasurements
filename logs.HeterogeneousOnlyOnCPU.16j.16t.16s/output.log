@@ -1,0 +1,43 @@
+2 CPUs:
+  0: AMD EPYC 9534 64-Core Processor (64 cores, 128 threads)
+  1: AMD EPYC 9534 64-Core Processor (64 cores, 128 threads)
+
+4 visible NVIDIA CUDA GPUs:
+  0: NVIDIA L40S
+  1: NVIDIA L40S
+  2: NVIDIA L40S
+  3: NVIDIA L40S
+
+No visible AMD ROCm GPUs
+
+Benchmarking only I/O
+Warming up
+
+Running 3 times over 1000 events with 16 jobs, each with 16 threads, 16 streams, and 1 GPUs
+  3131.7 ±   9.5 ev/s (900 events, 11.9% overlap),   6100.2 ± 122.3 ev/s (⩾ 75 events, overlap-only)
+  3062.5 ±   9.4 ev/s (900 events, 52.0% overlap),   3043.9 ±  26.8 ev/s (⩾ 375 events, overlap-only)
+  3125.9 ±   9.4 ev/s (900 events, 0.0% overlap)
+ --------------------
+  3062.5 ev/s (single measurement with the highest overlap)
+
+Benchmarking HeterogeneousOnlyOnCPU_config.py
+Warming up
+
+Running 3 times over 1000 events with 16 jobs, each with 16 threads, 16 streams, and 1 GPUs
+    48.0 ±   0.0 ev/s (900 events, 97.6% overlap),     47.8 ±   0.0 ev/s (⩾ 800 events, overlap-only)
+    47.9 ±   0.0 ev/s (900 events, 97.0% overlap),     47.7 ±   0.0 ev/s (⩾ 800 events, overlap-only)
+    47.9 ±   0.0 ev/s (900 events, 97.1% overlap),     47.7 ±   0.0 ev/s (⩾ 800 events, overlap-only)
+ --------------------
+    47.9 ±   0.1 ev/s,     47.7 ±   0.0 ev/s (⩾ 800 events, overlap-only)
+
+
+-------------------------------------
+           GPU MEMORY USAGE
+-------------------------------------
+Monitoring Interval: 1 second(s)
+Number of Measurements: 1680
+Data points saved to: 'logs.HeterogeneousOnlyOnCPU.16j.16t.16s/gpu_memory_HeterogeneousOnlyOnCPU_16j_16t_16s.csv'
+
+Peak Total GPU Memory Usage: 5768 MiB
+Mean Total GPU Memory Usage: 19.59 MiB (float using bc)
+-------------------------------------

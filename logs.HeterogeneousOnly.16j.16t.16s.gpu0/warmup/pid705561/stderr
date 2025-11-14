@@ -1,0 +1,101 @@
+%MSG-i ThreadStreamSetup:  (NoModuleName) 09-Nov-2025 15:35:46 CET pre-events
+setting # threads 16
+setting # streams 16
+%MSG
+%MSG-i AlpakaService:  (NoModuleName) 09-Nov-2025 15:35:47 CET pre-events
+AlpakaServiceSerialSync succesfully initialised.
+Found 1 device:
+  - AMD EPYC 9534 64-Core Processor
+%MSG
+%MSG-i CUDAService:  (NoModuleName) 09-Nov-2025 15:35:48 CET pre-events
+CUDA runtime version 12.9, driver version 12.8, NVIDIA driver version 570.124.06
+CUDA device 0: NVIDIA L40S (sm_89)
+%MSG
+%MSG-i AlpakaService:  (NoModuleName) 09-Nov-2025 15:35:49 CET pre-events
+AlpakaServiceCudaAsync succesfully initialised.
+Found 1 device:
+  - NVIDIA L40S
+%MSG
+09-Nov-2025 15:35:51 CET  Initiating request to open file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+09-Nov-2025 15:36:15 CET  Successfully opened file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+Begin processing the 1st record. Run 1, Event 6601, LumiSection 67 on stream 2 at 09-Nov-2025 15:36:19.974 CET
+Begin processing the 2nd record. Run 1, Event 6602, LumiSection 67 on stream 7 at 09-Nov-2025 15:36:19.975 CET
+Begin processing the 3rd record. Run 1, Event 6603, LumiSection 67 on stream 0 at 09-Nov-2025 15:36:19.975 CET
+Begin processing the 4th record. Run 1, Event 6604, LumiSection 67 on stream 10 at 09-Nov-2025 15:36:20.066 CET
+Begin processing the 5th record. Run 1, Event 6605, LumiSection 67 on stream 5 at 09-Nov-2025 15:36:20.066 CET
+Begin processing the 6th record. Run 1, Event 6606, LumiSection 67 on stream 8 at 09-Nov-2025 15:36:20.066 CET
+Begin processing the 7th record. Run 1, Event 6607, LumiSection 67 on stream 3 at 09-Nov-2025 15:36:20.066 CET
+Begin processing the 8th record. Run 1, Event 6608, LumiSection 67 on stream 4 at 09-Nov-2025 15:36:20.066 CET
+Begin processing the 9th record. Run 1, Event 6609, LumiSection 67 on stream 6 at 09-Nov-2025 15:36:20.066 CET
+Begin processing the 10th record. Run 1, Event 6610, LumiSection 67 on stream 15 at 09-Nov-2025 15:36:20.066 CET
+Begin processing the 11th record. Run 1, Event 6611, LumiSection 67 on stream 14 at 09-Nov-2025 15:36:20.066 CET
+Begin processing the 12th record. Run 1, Event 6612, LumiSection 67 on stream 12 at 09-Nov-2025 15:36:20.067 CET
+Begin processing the 13th record. Run 1, Event 6613, LumiSection 67 on stream 9 at 09-Nov-2025 15:36:20.067 CET
+Begin processing the 14th record. Run 1, Event 6614, LumiSection 67 on stream 1 at 09-Nov-2025 15:36:20.067 CET
+Begin processing the 15th record. Run 1, Event 6615, LumiSection 67 on stream 11 at 09-Nov-2025 15:36:20.067 CET
+Begin processing the 16th record. Run 1, Event 6616, LumiSection 67 on stream 13 at 09-Nov-2025 15:36:20.067 CET
+Begin processing the 17th record. Run 1, Event 6617, LumiSection 67 on stream 0 at 09-Nov-2025 15:36:20.161 CET
+Begin processing the 18th record. Run 1, Event 6618, LumiSection 67 on stream 3 at 09-Nov-2025 15:36:20.192 CET
+Begin processing the 19th record. Run 1, Event 6619, LumiSection 67 on stream 4 at 09-Nov-2025 15:36:20.192 CET
+Begin processing the 20th record. Run 1, Event 6620, LumiSection 67 on stream 6 at 09-Nov-2025 15:36:20.192 CET
+Begin processing the 21st record. Run 1, Event 6621, LumiSection 67 on stream 15 at 09-Nov-2025 15:36:20.192 CET
+Begin processing the 22nd record. Run 1, Event 6622, LumiSection 67 on stream 14 at 09-Nov-2025 15:36:20.192 CET
+Begin processing the 23rd record. Run 1, Event 6623, LumiSection 67 on stream 3 at 09-Nov-2025 15:36:20.278 CET
+----- Begin Fatal Exception 09-Nov-2025 15:36:28 CET-----------------------
+An exception of category 'StdException' occurred while
+   [0] Processing  Event run: 1 lumi: 67 event: 6601 stream: 2
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+----- Begin Fatal Exception 09-Nov-2025 15:36:28 CET-----------------------
+An exception of category 'StdException' occurred while
+   [0] Processing  Event run: 1 lumi: 67 event: 6621 stream: 15
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+----- Begin Fatal Exception 09-Nov-2025 15:36:28 CET-----------------------
+An exception of category 'StdException' occurred while
+   [0] Processing  Event run: 1 lumi: 67 event: 6614 stream: 1
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+----- Begin Fatal Exception 09-Nov-2025 15:36:28 CET-----------------------
+An exception of category 'StdException' occurred while
+   [0] Processing  Event run: 1 lumi: 67 event: 6602 stream: 7
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+----- Begin Fatal Exception 09-Nov-2025 15:36:28 CET-----------------------
+An exception of category 'StdException' occurred while
+   [0] Processing  Event run: 1 lumi: 67 event: 6605 stream: 5
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+----- Begin Fatal Exception 09-Nov-2025 15:36:28 CET-----------------------
+An exception of category 'StdException' occurred while
+   [0] Processing  Event run: 1 lumi: 67 event: 6615 stream: 11
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 15:36:28 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 15:36:28 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG

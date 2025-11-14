@@ -1,0 +1,333 @@
+2 CPUs:
+  0: AMD EPYC 9534 64-Core Processor (64 cores, 128 threads)
+  1: AMD EPYC 9534 64-Core Processor (64 cores, 128 threads)
+
+2 visible NVIDIA CUDA GPUs:
+  0: NVIDIA L40S
+  1: NVIDIA L40S
+
+No visible AMD ROCm GPUs
+
+Benchmarking only I/O
+Warming up
+
+Running 3 times over 1000 events with 16 jobs, each with 16 threads, 16 streams, and 1 GPUs
+  3083.1 ±   9.4 ev/s (900 events, 62.2% overlap),   3061.8 ±  20.4 ev/s (⩾ 475 events, overlap-only)
+  2964.4 ±   9.1 ev/s (900 events, 53.0% overlap),   2922.8 ±  25.4 ev/s (⩾ 375 events, overlap-only)
+  3036.1 ±   9.2 ev/s (900 events, 54.3% overlap),   3022.0 ±  23.9 ev/s (⩾ 400 events, overlap-only)
+ --------------------
+  3083.1 ev/s (single measurement with the highest overlap),   3002.2 ±  71.6 ev/s (⩾ 375 events, overlap-only)
+
+
+Benchmarking HeterogeneousOnly_config.py
+Warming up
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+----- Begin Fatal Exception 09-Nov-2025 16:01:38 CET-----------------------
+An exception of category 'AsyncCallNotAllowed' occurred while
+   [0] Calling Async::run()
+Exception Message:
+Framework is shutting down, further run() calls are not allowed
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:01:38 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:01:38 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/warmup/pid754762/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/warmup/pid754762/stderr for the full logs
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:01:38 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:01:38 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/warmup/pid754739/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/warmup/pid754739/stderr for the full logs
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:01:40 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:01:40 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/warmup/pid754746/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/warmup/pid754746/stderr for the full logs
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:01:40 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:01:40 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/warmup/pid754761/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/warmup/pid754761/stderr for the full logs
+
+Running 3 times over 1000 events with 16 jobs, each with 16 threads, 16 streams, and 1 GPUs
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+----- End Fatal Exception -------------------------------------------------
+----- Begin Fatal Exception 09-Nov-2025 16:03:29 CET-----------------------
+An exception of category 'StdException' occurred while
+   [0] Processing Event run: 1 lumi: 67 event: 6602
+   [1] Running path 'DST_HeterogeneousReco'
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:03:29 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:03:29 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0000/pid758327/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0000/pid758327/stderr for the full logs
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:03:29 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:03:29 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0000/pid758333/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0000/pid758333/stderr for the full logs
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:03:29 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:03:29 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0000/pid758342/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0000/pid758342/stderr for the full logs
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:03:29 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:03:29 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0000/pid758329/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0000/pid758329/stderr for the full logs
+4 jobs failed, this measurement will be ignored
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:05:19 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:05:19 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0001/pid761970/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0001/pid761970/stderr for the full logs
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:05:20 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:05:20 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0001/pid761977/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0001/pid761977/stderr for the full logs
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:05:19 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:05:19 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0001/pid761985/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0001/pid761985/stderr for the full logs
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:05:20 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:05:20 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0001/pid761986/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0001/pid761986/stderr for the full logs
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+----- Begin Fatal Exception 09-Nov-2025 16:05:20 CET-----------------------
+An exception of category 'AsyncCallNotAllowed' occurred while
+   [0] Calling Async::run()
+Exception Message:
+Framework is shutting down, further run() calls are not allowed
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:05:20 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:05:20 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0001/pid761984/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0001/pid761984/stderr for the full logs
+5 jobs failed, this measurement will be ignored
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module CAHitNtupletAlpakaPhase2OT@alpaka/'hltExtendedPhase2PixelTracksSoA'
+Exception Message:
+A std::exception was thrown.
+/data/cmsbld/jenkins/workspace/build-any-ib/w/el9_amd64_gcc13/external/alpaka/2.0.0-8493f1d11d0378dc14d6ea6ecfc69ac5/include/alpaka/mem/buf/uniformCudaHip/traits/BufUniformCudaHipRtTraits.hpp(211) 'TApi::malloc(&memPtr, static_cast<std::size_t>(getWidth(extent)) * sizeof(TElem))' returned error  : 'cudaErrorMemoryAllocation': 'out of memory'!
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:07:10 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:07:10 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0002/pid765525/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0002/pid765525/stderr for the full logs
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module SiPixelPhase2DigiToCluster@alpaka/'hltPhase2SiPixelClustersSoA'
+   [3] Calling Async::run()
+Exception Message:
+Framework is shutting down, further run() calls are not allowed
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:07:10 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:07:10 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0002/pid765519/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0002/pid765519/stderr for the full logs
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+   [1] Running path 'DST_HeterogeneousReco'
+   [2] Calling method for module SiPixelPhase2DigiToCluster@alpaka/'hltPhase2SiPixelClustersSoA'
+   [3] Calling Async::run()
+Exception Message:
+Framework is shutting down, further run() calls are not allowed
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:07:10 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:07:10 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0002/pid765535/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0002/pid765535/stderr for the full logs
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+----- Begin Fatal Exception 09-Nov-2025 16:07:10 CET-----------------------
+An exception of category 'AsyncCallNotAllowed' occurred while
+   [0] Calling Async::run()
+Exception Message:
+Framework is shutting down, further run() calls are not allowed
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:07:10 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:07:10 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0002/pid765521/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0002/pid765521/stderr for the full logs
+The underlying cmsRun job failed with return code 66
+
+The last lines of the error log are:
+----- Begin Fatal Exception 09-Nov-2025 16:07:10 CET-----------------------
+An exception of category 'AsyncCallNotAllowed' occurred while
+   [0] Calling Async::run()
+Exception Message:
+Framework is shutting down, further run() calls are not allowed
+----- End Fatal Exception -------------------------------------------------
+09-Nov-2025 16:07:10 CET  Closed file file:/cms-hlt-nfs/data/relValTTbar_200PU/CMSSW_16_0_0_pre1/00a72589-5bf0-4578-ae3c-620aed9b1312.root
+%MSG-w ThroughputService:  AfterModEndJob 09-Nov-2025 16:07:10 CET EndJob
+Not enough events to measure the throughput with a resolution of 25 events
+%MSG
+
+
+See logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0002/pid765534/stdout and logs.HeterogeneousOnly.16j.16t.16s.gpu01/step0002/pid765534/stderr for the full logs
+5 jobs failed, this measurement will be ignored
+Traceback (most recent call last):
+  File "/shared/EOY2025/TheMeasurements/CMSSW_16_0_X_2025-11-05-2300/src/patatrack-scripts/benchmark", line 137, in <module>
+    multiCmsRun(process, **options)
+  File "/shared/EOY2025/TheMeasurements/CMSSW_16_0_X_2025-11-05-2300/src/patatrack-scripts/multirun.py", line 761, in multiCmsRun
+    value = throughputs[overlaps.index(max(overlaps))]
+ValueError: max() arg is an empty sequence
+
+-------------------------------------
+           GPU MEMORY USAGE
+-------------------------------------
+Monitoring Interval: 1 second(s)
+Number of Measurements: 635
+Data points saved to: 'logs.HeterogeneousOnly.16j.16t.16s.gpu01/gpu_memory_HeterogeneousOnly_16j_16t_16s.csv'
+
+Peak Total GPU Memory Usage: 89224 MiB
+Mean Total GPU Memory Usage: 16450.12 MiB (float using bc)
+-------------------------------------

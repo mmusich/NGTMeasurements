@@ -1,0 +1,44 @@
+2 CPUs:
+  0: AMD EPYC 9534 64-Core Processor (64 cores, 128 threads)
+  1: AMD EPYC 9534 64-Core Processor (64 cores, 128 threads)
+
+4 visible NVIDIA CUDA GPUs:
+  0: NVIDIA L40S
+  1: NVIDIA L40S
+  2: NVIDIA L40S
+  3: NVIDIA L40S
+
+No visible AMD ROCm GPUs
+
+Benchmarking only I/O
+Warming up
+
+Running 3 times over 1000 events with 16 jobs, each with 16 threads, 16 streams, and 1 GPUs
+  3077.3 ±   9.3 ev/s (900 events, 63.4% overlap),   3083.2 ±  18.8 ev/s (⩾ 500 events, overlap-only)
+  2979.8 ±   9.1 ev/s (900 events, 61.5% overlap),   2957.4 ±  19.6 ev/s (⩾ 475 events, overlap-only)
+  2989.7 ±   9.1 ev/s (900 events, 72.1% overlap),   2995.7 ±  15.4 ev/s (⩾ 575 events, overlap-only)
+ --------------------
+  2989.7 ev/s (single measurement with the highest overlap),   3012.1 ±  64.5 ev/s (⩾ 475 events, overlap-only)
+
+
+Benchmarking MkFitSeedingLSTOnCPU_config.py
+Warming up
+
+Running 3 times over 1000 events with 16 jobs, each with 16 threads, 16 streams, and 1 GPUs
+    34.7 ±   0.0 ev/s (900 events, 97.5% overlap),     34.6 ±   0.0 ev/s (⩾ 825 events, overlap-only)
+    34.7 ±   0.0 ev/s (900 events, 98.8% overlap),     34.6 ±   0.0 ev/s (⩾ 800 events, overlap-only)
+    34.7 ±   0.0 ev/s (900 events, 98.1% overlap),     34.6 ±   0.0 ev/s (⩾ 825 events, overlap-only)
+ --------------------
+    34.7 ±   0.0 ev/s,     34.6 ±   0.0 ev/s (⩾ 800 events, overlap-only)
+
+
+-------------------------------------
+           GPU MEMORY USAGE
+-------------------------------------
+Monitoring Interval: 1 second(s)
+Number of Measurements: 2162
+Data points saved to: 'logs.MkFitSeedingLSTOnCPU.16j.16t.16s.allGPUs/gpu_memory_MkFitSeedingLSTOnCPU_16j_16t_16s.csv'
+
+Peak Total GPU Memory Usage: 5308 MiB
+Mean Total GPU Memory Usage: 16.37 MiB (float using bc)
+-------------------------------------
